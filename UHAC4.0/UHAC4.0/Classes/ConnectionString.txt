@@ -1,0 +1,1 @@
+﻿server=localhost; uid=root; password=; database=takeyourtime_db;

@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A2A07F8-31C6-4A80-8A32-A258A715B02B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UHAC4._0</RootNamespace>
+    <AssemblyName>UHAC4.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Calendar.NET">
+      <HintPath>..\..\UHAC\UHAC\bin\Debug\Calendar.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\UHAC\UHAC\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\New folder\IceCreamHouse\DLLs\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\..\Desktop\New folder\IceCreamHouse\DLLs\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\New folder\IceCreamHouse\DLLs\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\UHAC\UHAC\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Touchless.Vision">
+      <HintPath>..\..\UHAC\UHAC\bin\Debug\Touchless.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="WebcamLibrary">
+      <HintPath>..\..\UHAC\UHAC\bin\Debug\WebcamLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AnimateControl.cs" />
+    <Compile Include="Classes\AnimateForm.cs" />
+    <Compile Include="Classes\Database.cs" />
+    <Compile Include="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeacher.designer.cs">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoom.designer.cs">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceSituation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceSituation.designer.cs">
+      <DependentUpon>AttendanceSituation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubject.designer.cs">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox\MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScanNFC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanNFC.designer.cs">
+      <DependentUpon>ScanNFC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeacher.resx">
+      <DependentUpon>AddTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoom.resx">
+      <DependentUpon>AddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceSituation.resx">
+      <DependentUpon>AttendanceSituation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubject.resx">
+      <DependentUpon>AddSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox\MsgBox.resx">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ScanNFC.resx">
+      <DependentUpon>ScanNFC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Absent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bill.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DragEnDrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_accounts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_add_alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_add_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_add_person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_add_to_queue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_alarms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_attach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_attachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_backspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_cc_bcc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_collection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_copy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_dock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_go_to_today.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_half_important.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_import_export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_important.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_labels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_mail_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_new_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_new_event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_new_label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_new_picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_next_item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_not_important.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_overflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_paste2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_pasteDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_place.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_previous_item.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_read.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_reply_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_secure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_select_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_send_now.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_sort_by_size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_storage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_user_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_view_as_grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_view_as_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_web_site.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Late.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leonardo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NFC_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NFCInstruction.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotifHead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhotoForeground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Present.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuestionIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuccessIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarningIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classes\ConnectionString.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
